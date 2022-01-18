@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>iniciar_sesion_unifin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9a756713-0b86-4a4c-81ed-fd471da9793d</testCaseGuid>
+   <variable>
+      <defaultValue>'fernanda.rojas'</defaultValue>
+      <description></description>
+      <id>f0033569-5bc5-4d95-8bac-b163e45c6535</id>
+      <masked>false</masked>
+      <name>usuario</name>
+   </variable>
+</TestCaseEntity>

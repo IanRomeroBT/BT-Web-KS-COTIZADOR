@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC01-datos_generales</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4390976-1fed-43df-a6a9-60e7e451a34e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d4353a56-3816-4fbd-af0b-bb798d158309</id>
+      <masked>false</masked>
+      <name>cliente</name>
+   </variable>
+</TestCaseEntity>
