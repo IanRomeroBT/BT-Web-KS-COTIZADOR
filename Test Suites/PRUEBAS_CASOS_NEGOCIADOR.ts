@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>PRUEBAS_CASOS_NEGOCIADOR</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>a6a15c52-476b-4696-ac32-944147ebb778</testSuiteGuid>
+   <testCaseLink>
+      <guid>c7468c72-c19f-400a-a4fe-1b38c9426c4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HOOKS/inicio_sesion_quantico</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bcb6dfac-dc54-41e8-948f-080d554e5f47</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eff7e74f-3e11-4e40-9e86-7e33622ef8e3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a516fa3c-d5ca-4056-8a5b-c0e9d28d69da</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/HOOKS/acceder_solicitud_quantico</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e10cd55f-5066-43c6-a08f-8a2429470fbf</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>14f3db08-5a17-4a33-abb1-f51c444bdcb5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QUANTICO/SC06_informacion_adicional</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7a86db19-7bed-4b3f-98ed-c56ce1a394ee</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1b7ce6ff-e4c5-454a-9c00-15802608be63</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d194c1c-8689-4442-9c22-cc9c994bc35e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b9a397b1-4a3b-44fc-87d3-f4e934cdb915</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
