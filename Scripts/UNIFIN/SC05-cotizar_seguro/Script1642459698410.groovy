@@ -40,11 +40,15 @@ WebUI.setText(findTestObject('UNIFIN/CotizacionSeguro/input_tipoCarga'), 'Person
 
 WebUI.selectOptionByLabel(findTestObject('UNIFIN/CotizacionSeguro/select_numeroSemiRemolque'), 'N/A', false)
 
-WebUI.setText(findTestObject('UNIFIN/CotizacionSeguro/textarea_observaciones'), 'Test')
+WebUI.setText(findTestObject('UNIFIN/CotizacionSeguro/textarea_observaciones'), observaciones)
 
 WebUI.selectOptionByLabel(findTestObject('UNIFIN/CotizacionSeguro/select_procedenciaVehiculo'), 'Nacional', false)
 
-WebUI.selectOptionByLabel(findTestObject('UNIFIN/CotizacionSeguro/select_estadoCondiciones'), 'Seminuevo', false)
+if (nuevo.equals('ok')) {
+    WebUI.selectOptionByLabel(findTestObject('UNIFIN/CotizacionSeguro/select_estadoCondiciones'), 'Nuevo', false)
+} else {
+    WebUI.selectOptionByLabel(findTestObject('UNIFIN/CotizacionSeguro/select_estadoCondiciones'), 'Seminuevo', false)
+}
 
 WebUI.sendKeys(findTestObject('UNIFIN/CotizacionSeguro/input_numeroPasajeros'), '6')
 
@@ -56,7 +60,7 @@ WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
 
 WebUI.enhancedClick(findTestObject('UNIFIN/CotizacionSeguro/div_documentos'))
 
-/*
+/* Habilitar cuando se permitan cargar documentos
 WebUI.waitForElementClickable(findTestObject('UNIFIN/CotizacionSeguro/button_cargarArchivoDYN', [('idx') : '1']), GlobalVariable.REGULAR_TIME_OUT)
 
 WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_cargarArchivoDYN', [('idx') : '1']))
@@ -78,7 +82,38 @@ WebUI.setText(findTestObject('UNIFIN/CotizacionSeguro/textarea_agregarComentario
 
 WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_comentario'))
 
-WebUI.waitForElementNotPresent(findTestObject('UNIFIN/CotizacionSeguro/textarea_agregarComentario'), GlobalVariable.REGULAR_TIME_OUT)
+WebUI.waitForElementNotVisible(findTestObject('UNIFIN/CotizacionSeguro/button_comentario'), GlobalVariable.REGULAR_TIME_OUT)
+
+if (seguroCliente.equals('ok')) {
+	
+	WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/switch_clientePropSeguro'))
+	
+    /* Habilitar cuando se permitan cargar documentos
+	 WebUI.waitForElementClickable(findTestObject('UNIFIN/CotizacionSeguro/button_cargarArchivoDYN', [('idx') : '2']), GlobalVariable.REGULAR_TIME_OUT)
+	 
+	 WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_cargarArchivoDYN', [('idx') : '2']))
+	 
+	 WebUI.waitForElementPresent(findTestObject('UNIFIN/CotizacionSeguro/input_uploadFile'), GlobalVariable.REGULAR_TIME_OUT)
+	 
+	 CustomKeywords.'com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile'(findTestObject('UNIFIN/CotizacionSeguro/input_uploadFile'),
+			 routeFile + 'archivo.pdf')
+	 
+	 WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_guardarDocumento'))
+	 */
+	
+    WebUI.waitForElementClickable(findTestObject('UNIFIN/CotizacionSeguro/button_comentarioArchivoDYN', [('idx') : '2']), 
+        GlobalVariable.REGULAR_TIME_OUT)
+
+    WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_comentarioArchivoDYN', [('idx') : '2']))
+
+    WebUI.waitForElementVisible(findTestObject('UNIFIN/CotizacionSeguro/textarea_agregarComentario'), GlobalVariable.REGULAR_TIME_OUT)
+
+    WebUI.setText(findTestObject('UNIFIN/CotizacionSeguro/textarea_agregarComentario'), 'TEST')
+
+    WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_comentario'))
+
+    WebUI.waitForElementNotVisible(findTestObject('UNIFIN/CotizacionSeguro/button_comentario'), GlobalVariable.REGULAR_TIME_OUT)
+}
 
 WebUI.enhancedClick(findTestObject('UNIFIN/CotizacionSeguro/div_comentarios'))
 
@@ -93,6 +128,12 @@ WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_aceptarComentario'))
 WebUI.click(findTestObject('UNIFIN/CotizacionSeguro/button_enviarSeguros'))
 
 WebUI.waitForElementPresent(findTestObject('UNIFIN/DatosSeguro/div_seguro'), GlobalVariable.REGULAR_TIME_OUT)
+
+//Eliminar cuando funcione el input de contrato
+if(WebUI.verifyElementPresent(findTestObject('UNIFIN/DatosGenerales/input_contratoAnterior'), 3, FailureHandling.OPTIONAL)) {
+	WebUI.setText(findTestObject('UNIFIN/DatosGenerales/input_contratoAnterior'), 'TEST')
+}
+
 
 WebUI.click(findTestObject('UNIFIN/DatosSeguro/div_seguro'))
 
@@ -111,4 +152,3 @@ CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', new
 CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', newRow, 1, usuario)
 
 WebUI.closeBrowser()
-

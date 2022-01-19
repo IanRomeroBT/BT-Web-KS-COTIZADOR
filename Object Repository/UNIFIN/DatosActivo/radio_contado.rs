@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>switch_nuevo</name>
+   <name>radio_contado</name>
    <tag></tag>
-   <elementGuidId>0b199243-829f-4e96-b333-45c3617a9b3e</elementGuidId>
+   <elementGuidId>6fe7218a-0039-4ee4-b988-aed7e42de8e7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[3]/span/div/div/input</value>
+         <key>CSS</key>
+         <value>#OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent_wtRdbPaymentFormControl2</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox_wtchkAsset_IsNew</value>
+         <key>XPATH</key>
+         <value>//input[contains(@id, 'wtContent_wtRdbPaymentFormControl') and @value='2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,63 +28,56 @@
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>checkbox</value>
+      <value>radio</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Quantico_StylingV2_wt144$block$OutSystemsUIWeb_wt14$block$wtContent$wtMainContent$OutSystemsUIWeb_wt44$block$wtColumn2$wtQuoteAsset_WebBlock$WebPatterns_wtfsAsset$block$wtContent$OutSystemsUIWeb_wt71$block$wtColumn2$OutSystemsUIWeb_wt60$block$wtCheckBox$wtchkAsset_IsNew</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>checked</name>
-      <type>Main</type>
-      <value>checked</value>
+      <value>-928897378</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox_wtchkAsset_IsNew</value>
+      <value>OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent_wtRdbPaymentFormControl2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>162</value>
+      <value>9</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>checkbox SmartInput</value>
+      <value>radio-button SmartInput</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeydown</name>
       <type>Main</type>
-      <value>return OsEnterKey('Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_wtRAction', arguments[0] || window.event);</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-invalid</name>
-      <type>Main</type>
-      <value>false</value>
+      <value>return OsEnterKey('OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt2_block_wtColumn1_wt45', arguments[0] || window.event);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
-      <value>OsAjax(arguments[0] || window.event,'Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox_wtchkAsset_IsNew','Quantico_StylingV2_wt144$block$OutSystemsUIWeb_wt14$block$wtContent$wtMainContent$OutSystemsUIWeb_wt44$block$wtColumn2$wtQuoteAsset_WebBlock$WebPatterns_wtfsAsset$block$wtContent$OutSystemsUIWeb_wt71$block$wtColumn2$OutSystemsUIWeb_wt60$block$wtCheckBox$wtchkAsset_IsNew','Change','__OSVSTATE,','');</value>
+      <value>OsAjax(arguments[0] || window.event,'OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent_wtRdbPaymentFormControl2','OutSystemsUIWeb_wt51$block$wtMainContent$OutSystemsUIWeb_wt11$block$wtContent$wtRdbPaymentFormControl2','Change','__OSVSTATE,','');</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -105,34 +98,41 @@
       <matchCondition>equals</matchCondition>
       <name>origvalue</name>
       <type>Main</type>
-      <value>true</value>
+      <value>false</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox_wtchkAsset_IsNew&quot;)</value>
+      <value>id(&quot;OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent_wtRdbPaymentFormControl2&quot;)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/UNIFIN/DatosActivo/iframe_1</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox_wtchkAsset_IsNew']</value>
+      <value>//input[@id='OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent_wtRdbPaymentFormControl2']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_OutSystemsUIWeb_wt71_block_wtColumn2_OutSystemsUIWeb_wt60_block_wtCheckBox']/input</value>
+      <value>//div[@id='OutSystemsUIWeb_wt51_block_wtMainContent_OutSystemsUIWeb_wt11_block_wtContent']/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/span/div/div/input</value>
+      <value>//td[2]/div/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -35,27 +35,64 @@ WebUI.setText(findTestObject('UNIFIN/DatosActivo/input_descripcion'), 'AUTOMÓVI
 
 WebUI.setText(findTestObject('UNIFIN/DatosActivo/input_comentarios'), 'TEST')
 
-WebUI.sendKeys(findTestObject('UNIFIN/DatosActivo/input_importe'), Keys.chord(Keys.CONTROL + 'A') + '540000.00')
+WebUI.sendKeys(findTestObject('UNIFIN/DatosActivo/input_importe'), Keys.chord(Keys.CONTROL + 'A') + importeAuto)
 
-//WebUI.click(findTestObject('UNIFIN/DatosActivo/switch_nuevo'))
-WebUI.click(findTestObject('UNIFIN/DatosActivo/button_nuevoAccesorio'))
+if(nuevo != "ok") {
+	WebUI.click(findTestObject('UNIFIN/DatosActivo/switch_nuevo'))
+}
 
-WebUI.waitForElementClickable(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_tipo'), 'Accesorio', true)
+if (accesorio.equals('ok')) {
+	
+	WebUI.click(findTestObject('UNIFIN/DatosActivo/button_nuevoAccesorio'))
+	
+	WebUI.waitForElementClickable(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
+	
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_tipo'), 'Accesorio', true)
+	
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_descripcion'), 'ADAPTADOR', true)
+	
+	WebUI.setText(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), 'TEST ACCESORIO')
+	
+	if(formaPagoAccesorio.equals('financiado')) {
+		WebUI.click(findTestObject('UNIFIN/DatosActivo/radio_financiado'))
+	}else {
+		WebUI.click(findTestObject('UNIFIN/DatosActivo/radio_contado'))
+	}
+	
+	WebUI.delay(2)
+	
+	WebUI.sendKeys(findTestObject('UNIFIN/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') +
+		Keys.chord(Keys.TAB))
+	
+	WebUI.click(findTestObject('UNIFIN/DatosActivo/button_aceptar'))
+}
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_descripcion'), 'ADAPTADOR', true)
-
-WebUI.setText(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), 'TEST ACCESORIO')
-
-WebUI.click(findTestObject('UNIFIN/DatosActivo/radio_financiado'))
-
-WebUI.delay(2)
-
-WebUI.sendKeys(findTestObject('UNIFIN/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') + 
-    Keys.chord(Keys.TAB))
-
-WebUI.click(findTestObject('UNIFIN/DatosActivo/button_aceptar'))
+if (adaptacion.equals('ok')) {
+	
+	WebUI.click(findTestObject('UNIFIN/DatosActivo/button_nuevoAccesorio'))
+	
+	WebUI.waitForElementClickable(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
+	
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_tipo'), 'Adaptación', true)
+	
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosActivo/div_descripcion'), 'DE REFRIGERACION', true)
+	
+	WebUI.setText(findTestObject('UNIFIN/DatosActivo/textarea_comentarios'), 'TEST ADAPTACIÓN')
+	
+	if(formaPagoAdaptacion.equals('financiado')) {
+		WebUI.click(findTestObject('UNIFIN/DatosActivo/radio_financiado'))
+	}else {
+		WebUI.click(findTestObject('UNIFIN/DatosActivo/radio_contado'))
+	}	
+	
+	WebUI.delay(2)
+	
+	WebUI.sendKeys(findTestObject('UNIFIN/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') +
+		Keys.chord(Keys.TAB))
+	
+	WebUI.click(findTestObject('UNIFIN/DatosActivo/button_aceptar'))
+}
 
 WebUI.click(findTestObject('UNIFIN/Globales/button_siguiente'))
 
