@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SC05-cotizar_seguro</name>
+   <name>escenarios_solicitud_unifin_masiva</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fd3360cf-7d76-4652-858a-9dacb4ca502d</testCaseGuid>
+   <testCaseGuid>27a2e5f8-217a-4842-9fd0-5ea63c3a2b26</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a2baa50d-2c59-4ab2-a258-3d9b7d204bff</id>
+      <id>2ecebfe6-07fe-4094-8487-cf29b026dfb4</id>
       <masked>false</masked>
-      <name>observaciones</name>
+      <name>cliente</name>
    </variable>
    <variable>
-      <defaultValue>'ok'</defaultValue>
+      <defaultValue>'ESC-01'</defaultValue>
       <description></description>
-      <id>3cd4a779-eaa0-467d-bd7b-f6ba6a6cf256</id>
+      <id>5643f834-a19b-4b91-825a-a5aa9a9d5ff4</id>
       <masked>false</masked>
-      <name>nuevo</name>
+      <name>nombreEscenario</name>
    </variable>
    <variable>
-      <defaultValue>'ok'</defaultValue>
+      <defaultValue>'fernanda.rojas'</defaultValue>
       <description></description>
-      <id>ccb32ad8-16df-4c71-b92f-2b5d06277d1f</id>
+      <id>06250da7-400b-44bc-8ef7-ccb7a92d538d</id>
       <masked>false</masked>
-      <name>seguroCliente</name>
+      <name>usuario</name>
    </variable>
 </TestCaseEntity>

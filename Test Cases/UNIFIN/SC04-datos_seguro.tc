@@ -6,10 +6,17 @@
    <comment></comment>
    <testCaseGuid>574a13fa-0871-4f5f-9109-ad7048031151</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Cliente'</defaultValue>
       <description></description>
       <id>3af7380e-40c6-42f9-af36-02f3c7a6dc01</id>
       <masked>false</masked>
-      <name>variable</name>
+      <name>tipoPago</name>
+   </variable>
+   <variable>
+      <defaultValue>'765000.00'</defaultValue>
+      <description></description>
+      <id>c038b3d0-0457-44b8-8726-18a13aac1069</id>
+      <masked>false</masked>
+      <name>importeAuto</name>
    </variable>
 </TestCaseEntity>

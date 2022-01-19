@@ -17,17 +17,36 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def sumaAsegurada = Double.parseDouble(importeAuto.toString()) * 0.30
+
 WebUI.scrollToPosition(0, 0)
 
 WebUI.click(findTestObject('UNIFIN/DatosSeguro/div_seguro'))
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosSeguro/div_formaPago'), 'Cliente', false)
+CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosSeguro/div_formaPago'), tipoPago, false)
 
-WebUI.click(findTestObject('UNIFIN/Globales/button_guardar'))
+def seguro = WebUI.getAttribute(findTestObject('UNIFIN/DatosSeguro/div_aseguradora'), 'class', FailureHandling.OPTIONAL)
+
+if (seguro.contains('choices-disabled') == false) {
+    CustomKeywords.'Utilidades.CustomSelect'(findTestObject('UNIFIN/DatosSeguro/div_aseguradora'), 'INBURSA', false)
+
+    WebUI.sendKeys(findTestObject('UNIFIN/DatosSeguro/input_sumaAsegurada'), Keys.chord(Keys.CONTROL + 'A') + sumaAsegurada.toString() + Keys.chord(Keys.TAB))
+
+	WebUI.delay(1)
+	
+    WebUI.sendKeys(findTestObject('UNIFIN/DatosSeguro/input_iva'), '16' + Keys.chord(Keys.TAB))
+}
+
+WebUI.enhancedClick(findTestObject('UNIFIN/Globales/button_guardar'))
 
 WebUI.waitForElementClickable(findTestObject('UNIFIN/Globales/button_cotizar'), GlobalVariable.SHORT_TIME_OUT)
 
 WebUI.click(findTestObject('UNIFIN/Globales/button_cotizar'))
+
+//Eliminar cuando funcione el input de contrato
+if(WebUI.verifyElementPresent(findTestObject('UNIFIN/DatosGenerales/input_contratoAnterior'), 3, FailureHandling.OPTIONAL)) {
+	WebUI.setText(findTestObject('UNIFIN/DatosGenerales/input_contratoAnterior'), 'TEST')
+}
 
 WebUI.click(findTestObject('UNIFIN/DatosSeguro/div_seguro'))
 
