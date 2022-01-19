@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_comentarioArchivoDYN</name>
+   <name>input_sumaAsegurada</name>
    <tag></tag>
-   <elementGuidId>89774d29-e442-4385-aba3-2c9a11b1dfdb</elementGuidId>
+   <elementGuidId>47e144e0-6a29-43c5-9cf3-fc6d177b3bd2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[contains(@class, 'fa fa-fw fa-comment')])[${idx}]</value>
+         <value>//input[contains(@name, '$wtInsuranceAmountInput')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

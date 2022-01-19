@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//label[text() = 'Aseguradora:']//parent::div//div)[2]</value>
+         <value>(//label[text() = 'Aseguradora:']//parent::div//div)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

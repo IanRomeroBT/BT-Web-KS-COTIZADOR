@@ -6,11 +6,11 @@
    <elementGuidId>ac5be045-7a1d-46c9-90b8-cf19c9eb278b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//a[@id='RichWidgets_wt37_block_wtMainContent_wtTableRecords1_ctl03_wt40']/span[2])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='RichWidgets_wt37_block_wtMainContent_wtTableRecords1_ctl03_wt40']/span[2]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
