@@ -20,8 +20,8 @@
          <combinationType>ONE</combinationType>
          <id>0773531a-8908-4351-b52a-d061169d68c7</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>6,7,8,10,12,13,14</value>
+            <iterationType>RANGE</iterationType>
+            <value>8-8</value>
          </iterationEntity>
          <testDataId>Data Files/UNICOS/CLIENTES_PENDIENTES</testDataId>
       </testDataLink>
