@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>escenarios_solicitud_unifin_masiva</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>27a2e5f8-217a-4842-9fd0-5ea63c3a2b26</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2ecebfe6-07fe-4094-8487-cf29b026dfb4</id>
+      <masked>false</masked>
+      <name>cliente</name>
+   </variable>
+   <variable>
+      <defaultValue>'ESC-01'</defaultValue>
+      <description></description>
+      <id>5643f834-a19b-4b91-825a-a5aa9a9d5ff4</id>
+      <masked>false</masked>
+      <name>nombreEscenario</name>
+   </variable>
+   <variable>
+      <defaultValue>'fernanda.rojas'</defaultValue>
+      <description></description>
+      <id>06250da7-400b-44bc-8ef7-ccb7a92d538d</id>
+      <masked>false</masked>
+      <name>usuario</name>
+   </variable>
+</TestCaseEntity>
