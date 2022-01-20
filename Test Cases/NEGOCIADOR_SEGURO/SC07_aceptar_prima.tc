@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC07_aceptar_prima</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6812290a-68bd-4a44-b846-7ddcbf9a69a6</testCaseGuid>
+   <variable>
+      <defaultValue>'fernanda.rojas'</defaultValue>
+      <description></description>
+      <id>eac0ea56-c8b7-4278-b07a-4edf1e1b1302</id>
+      <masked>false</masked>
+      <name>usuario</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>73551219-f3a3-4037-85a2-4bd243072a92</id>
+      <masked>false</masked>
+      <name>folio</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>46f96bde-a2b0-4b9a-be2d-5d70d4bd6583</id>
+      <masked>false</masked>
+      <name>cotizacionAceptada</name>
+   </variable>
+</TestCaseEntity>

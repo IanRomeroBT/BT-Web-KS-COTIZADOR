@@ -29,9 +29,9 @@ public class Utilidades {
 		WebUI.click(select)
 
 		if(selectInIframe) {
-			WebUI.enhancedClick(findTestObject('UNIFIN/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]))
+			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]))
 		}else {
-			WebUI.enhancedClick(findTestObject('UNIFIN/Globales/option_selectDYN', [('optionLabel') : optionLabel]))
+			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectDYN', [('optionLabel') : optionLabel]))
 		}
 	}
 
