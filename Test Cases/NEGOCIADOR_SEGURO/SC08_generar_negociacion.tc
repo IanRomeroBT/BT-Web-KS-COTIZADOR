@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC08_generar_negociacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1575bbe8-690c-4374-8c38-3fdab98d6441</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e1828c6d-1008-4802-a3f7-7780704c82d4</id>
+      <masked>false</masked>
+      <name>cliente</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>18c8ee67-650f-48d3-b686-fb6b611c4a35</id>
+      <masked>false</masked>
+      <name>folio</name>
+   </variable>
+</TestCaseEntity>

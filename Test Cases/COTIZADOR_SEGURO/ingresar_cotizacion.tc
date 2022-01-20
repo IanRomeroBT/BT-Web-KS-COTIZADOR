@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ingresar_cotizacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7eec17e6-20c7-4325-b40b-47f2bed925a4</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8868cb89-6e6e-45ae-a2ed-05b93015bc84</id>
+      <masked>false</masked>
+      <name>folio</name>
+   </variable>
+</TestCaseEntity>

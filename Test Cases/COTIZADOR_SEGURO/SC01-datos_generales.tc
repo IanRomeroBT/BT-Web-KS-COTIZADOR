@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC01-datos_generales</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4390976-1fed-43df-a6a9-60e7e451a34e</testCaseGuid>
+   <variable>
+      <defaultValue>'ok'</defaultValue>
+      <description></description>
+      <id>049e5fd2-25aa-41a7-ab0e-d68a7a685c3b</id>
+      <masked>false</masked>
+      <name>clienteRegistrado</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d4353a56-3816-4fbd-af0b-bb798d158309</id>
+      <masked>false</masked>
+      <name>cliente</name>
+   </variable>
+   <variable>
+      <defaultValue>'ARRENDAMIENTO AGRICOLA'</defaultValue>
+      <description></description>
+      <id>2b599254-1d56-4557-a359-b025da58bea6</id>
+      <masked>false</masked>
+      <name>plan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Colocado'</defaultValue>
+      <description></description>
+      <id>b27fe6a8-2b9a-4428-9081-6a52bf86a9af</id>
+      <masked>false</masked>
+      <name>tipoOperacion</name>
+   </variable>
+   <variable>
+      <defaultValue>'Referenciada'</defaultValue>
+      <description></description>
+      <id>880eca10-908e-4404-a5cf-a89b8ab79ee7</id>
+      <masked>false</masked>
+      <name>tipoCompra</name>
+   </variable>
+   <variable>
+      <defaultValue>'Flotilla'</defaultValue>
+      <description></description>
+      <id>09cbfaac-bd70-4bf3-9250-1352ba86e367</id>
+      <masked>false</masked>
+      <name>cotizacion</name>
+   </variable>
+   <variable>
+      <defaultValue>'PESOS'</defaultValue>
+      <description></description>
+      <id>a853b7a0-21df-4ce5-8073-8f50c507084b</id>
+      <masked>false</masked>
+      <name>moneda</name>
+   </variable>
+</TestCaseEntity>

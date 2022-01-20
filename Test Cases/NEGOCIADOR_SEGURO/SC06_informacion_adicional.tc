@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC06_informacion_adicional</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>09310bd5-580a-4484-9d7f-c02830846cc3</testCaseGuid>
+   <variable>
+      <defaultValue>'12'</defaultValue>
+      <description></description>
+      <id>f437303b-4991-4e3e-b3a4-b3dbdc0e5642</id>
+      <masked>false</masked>
+      <name>plazos</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5d7d3eb2-98fb-422f-b389-9cb181c7c8db</id>
+      <masked>false</masked>
+      <name>cotizacionAceptada</name>
+   </variable>
+</TestCaseEntity>

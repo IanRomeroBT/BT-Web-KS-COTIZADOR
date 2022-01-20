@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC05-cotizar_seguro</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd3360cf-7d76-4652-858a-9dacb4ca502d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a2baa50d-2c59-4ab2-a258-3d9b7d204bff</id>
+      <masked>false</masked>
+      <name>observaciones</name>
+   </variable>
+   <variable>
+      <defaultValue>'ok'</defaultValue>
+      <description></description>
+      <id>3cd4a779-eaa0-467d-bd7b-f6ba6a6cf256</id>
+      <masked>false</masked>
+      <name>nuevo</name>
+   </variable>
+   <variable>
+      <defaultValue>'ok'</defaultValue>
+      <description></description>
+      <id>ccb32ad8-16df-4c71-b92f-2b5d06277d1f</id>
+      <masked>false</masked>
+      <name>seguroCliente</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a6c0c900-13c6-4c27-b0c7-0812c132d85a</id>
+      <masked>false</masked>
+      <name>plazos</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>541f777b-3879-4616-8c72-6be377877c07</id>
+      <masked>false</masked>
+      <name>plan</name>
+   </variable>
+</TestCaseEntity>
