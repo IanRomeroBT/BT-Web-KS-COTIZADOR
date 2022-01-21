@@ -17,16 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('QUANTICO/MenuQuantico/div_buzonTareas'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('QUANTICO/MenuQuantico/div_sinAsignar'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('QUANTICO/Solicitudes/span_disposicion'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByLabel(findTestObject('QUANTICO/Solicitudes/select_perfil'), 'Cotización de Seguros', false)
+WebUI.selectOptionByLabel(findTestObject('null'), 'Cotización de Seguros', false)
 
-WebUI.sendKeys(findTestObject('QUANTICO/Solicitudes/input_cotizacion'), folio + Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('null'), folio + Keys.chord(Keys.ENTER))
 
-WebUI.waitForElementPresent(findTestObject('QUANTICO/Solicitudes/tr_solicitud'), GlobalVariable.REGULAR_TIME_OUT)
+WebUI.waitForElementPresent(findTestObject('null'), GlobalVariable.REGULAR_TIME_OUT)
 
-WebUI.click(findTestObject('QUANTICO/Solicitudes/tr_solicitud'))
+WebUI.click(findTestObject('null'))

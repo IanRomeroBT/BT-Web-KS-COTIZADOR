@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>1</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>true</rerunFailedTestCasesOnly>
@@ -20,8 +20,8 @@
          <combinationType>ONE</combinationType>
          <id>0773531a-8908-4351-b52a-d061169d68c7</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>15</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>2</value>
          </iterationEntity>
          <testDataId>Data Files/CLIENTES_PENDIENTES</testDataId>
       </testDataLink>

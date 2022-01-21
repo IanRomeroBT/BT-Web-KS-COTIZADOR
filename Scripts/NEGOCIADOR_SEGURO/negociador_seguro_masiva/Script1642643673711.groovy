@@ -21,6 +21,7 @@ if(cotizacionAceptada != 'ok') {
 	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/inicio_sesion_quantico'), [('usuario') : 'lucero.vargas_tst', ('password') : 'RigbBhfdqOBGNlJIWM1ClA=='],
 		FailureHandling.STOP_ON_FAILURE)
 	
+	
 	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/acceder_solicitud'), [('folio') : folio], FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC06_informacion_adicional'), [('plazos') : plazos, ('cotizacionAceptada') : cotizacionAceptada],

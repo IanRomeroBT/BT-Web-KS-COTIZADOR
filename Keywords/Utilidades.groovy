@@ -29,6 +29,7 @@ public class Utilidades {
 		WebUI.click(select)
 
 		if(selectInIframe) {
+			WebUI.scrollToElement(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]),0)
 			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]))
 		}else {
 			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectDYN', [('optionLabel') : optionLabel]))

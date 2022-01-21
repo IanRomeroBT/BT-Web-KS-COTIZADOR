@@ -20,8 +20,8 @@
          <combinationType>ONE</combinationType>
          <id>47cfd29f-41d0-490b-b31b-d9411ea255a7</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>16-28</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>30</value>
          </iterationEntity>
          <testDataId>Data Files/FOLIOS</testDataId>
       </testDataLink>
