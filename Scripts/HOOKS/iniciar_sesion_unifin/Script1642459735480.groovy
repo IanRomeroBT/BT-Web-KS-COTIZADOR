@@ -21,12 +21,12 @@ WebUI.openBrowser(GlobalVariable.BASE_URL)
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementPresent(findTestObject('UNIFIN/InicioSesion/input_userName'), GlobalVariable.LONG_TIME_OUT)
+WebUI.verifyElementPresent(findTestObject('null'), GlobalVariable.LONG_TIME_OUT)
 
-WebUI.setText(findTestObject('UNIFIN/InicioSesion/input_userName'), usuario)
+WebUI.setText(findTestObject('null'), usuario)
 
-WebUI.setEncryptedText(findTestObject('UNIFIN/InicioSesion/input_password'), 'iGDxf8hSRT4=')
+WebUI.setEncryptedText(findTestObject('null'), 'iGDxf8hSRT4=')
 
-WebUI.click(findTestObject('UNIFIN/InicioSesion/button_iniciarSesion'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementPresent(findTestObject('UNIFIN/Menu/button_listaQuantico'), GlobalVariable.LONG_TIME_OUT)
+WebUI.verifyElementPresent(findTestObject('null'), GlobalVariable.LONG_TIME_OUT)
