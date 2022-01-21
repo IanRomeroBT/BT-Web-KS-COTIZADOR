@@ -30,14 +30,15 @@ WebUI.sendKeys(findTestObject('NEGOCIADOR_SEGURO/Negociador/input_nombreCliente'
 
 WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_buscarCliente'))
 
-WebUI.waitForElementPresent(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_consultarCliente'), GlobalVariable.REGULAR_TIME_OUT)
+if (WebUI.waitForElementPresent(findTestObject('NEGOCIADOR_SEGURO/Negociador/tr_cotizacion', [('folio') : folio]), 10, FailureHandling.CONTINUE_ON_FAILURE)) {
+    
+	WebUI.waitForElementPresent(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_consultarCliente'), GlobalVariable.REGULAR_TIME_OUT)
+	
+	WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_consultarCliente'))
+	
+	WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/tr_cotizacion', [('folio') : folio]))
 
-WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_consultarCliente'))
+    WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_generarNegociacion'))
 
-WebUI.waitForElementPresent(findTestObject('NEGOCIADOR_SEGURO/Negociador/tr_cotizacion', [('folio') : folio]), GlobalVariable.REGULAR_TIME_OUT)
-
-WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/tr_cotizacion', [('folio') : folio]))
-
-WebUI.click(findTestObject('NEGOCIADOR_SEGURO/Negociador/button_generarNegociacion'))
-
-WebUI.waitForElementVisible(findTestObject('NEGOCIADOR_SEGURO/Generales/alert_success'), GlobalVariable.REGULAR_TIME_OUT)
+    WebUI.waitForElementVisible(findTestObject('NEGOCIADOR_SEGURO/Generales/alert_success'), GlobalVariable.REGULAR_TIME_OUT)
+}

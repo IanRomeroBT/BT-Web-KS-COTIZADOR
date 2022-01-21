@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL_QUANTICO)
 
-WebUI.setText(findTestObject('QUANTICO/InicioSesion/input_username'), usuario)
+WebUI.setText(findTestObject('null'), usuario)
 
-WebUI.setEncryptedText(findTestObject('QUANTICO/InicioSesion/input_password'), password)
+WebUI.setEncryptedText(findTestObject('null'), password)
 
-WebUI.click(findTestObject('QUANTICO/InicioSesion/button_iniciarSesion'))
+WebUI.click(findTestObject('null'))
 
-WebUI.waitForElementClickable(findTestObject('QUANTICO/MenuQuantico/div_buzonTareas'), 60, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementClickable(findTestObject('null'), 60, FailureHandling.STOP_ON_FAILURE)

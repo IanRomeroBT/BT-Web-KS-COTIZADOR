@@ -21,4 +21,4 @@ WebUI.navigateToUrl(GlobalVariable.BASE_URL + "/index.php?entryPoint=CotizadorQu
 
 WebUI.switchToWindowTitle('Cotización')
 
-WebUI.waitForElementClickable(findTestObject('UNIFIN/DatosGenerales/switch_clienteRegistrado'), GlobalVariable.REGULAR_TIME_OUT)
+WebUI.waitForElementClickable(findTestObject('null'), GlobalVariable.REGULAR_TIME_OUT)
