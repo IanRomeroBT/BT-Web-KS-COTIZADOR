@@ -1,0 +1,10 @@
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 1","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 2","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 3","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 4","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 5","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin - Iteration 6","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin","bindedValues":{"usuario":"\u0027fernanda.rojas\u0027"}}
+{"testCaseName":"Test Cases/HOOKS/acceder_cotizador_unifin","testCaseId":"Test Cases/HOOKS/acceder_cotizador_unifin"}
+{"testCaseName":"Test Cases/UNIFIN/SC01-datos_generales","testCaseId":"Test Cases/UNIFIN/SC01-datos_generales","bindedValues":{"cliente":"\u0027OMAR MULU AGUILERA CHALAMANCH\u0027"}}
+{"testCaseName":"Test Cases/UNIFIN/SC02-datos_activo","testCaseId":"Test Cases/UNIFIN/SC02-datos_activo"}
+{"testCaseName":"Test Cases/UNIFIN/SC03-datos_condiciones","testCaseId":"Test Cases/UNIFIN/SC03-datos_condiciones"}

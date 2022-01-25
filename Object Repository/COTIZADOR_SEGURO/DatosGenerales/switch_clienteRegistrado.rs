@@ -10,14 +10,18 @@
          <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn1_wtQuoteCustomerWebBlock_OutSystemsUIWeb_wt33_block_wtContent_OutSystemsUIWeb_wt19_block_wtCheckBox_wt24</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'checkbox']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//input[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn1_wtQuoteCustomerWebBlock_OutSystemsUIWeb_wt33_block_wtContent_OutSystemsUIWeb_wt19_block_wtCheckBox_wt24']</value>
+         <value>//span/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -31,14 +35,14 @@
       <value>checkbox</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>Quantico_StylingV2_wt144$block$OutSystemsUIWeb_wt14$block$wtContent$wtMainContent$OutSystemsUIWeb_wt44$block$wtColumn1$wtQuoteCustomerWebBlock$OutSystemsUIWeb_wt33$block$wtContent$OutSystemsUIWeb_wt19$block$wtCheckBox$wt24</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

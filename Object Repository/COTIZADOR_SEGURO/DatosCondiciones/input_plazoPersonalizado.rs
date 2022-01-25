@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteFinantialCondition_WebBlock_WebPatterns_wt24_block_wtContent_wtFinancialConditionsListRecords_ctl08_wt35_wtTxtFinanCondTerm&quot;]</value>
+         <value>//*[contains(@id,&quot;ctl08_wt35_wtTxtFinanCondTerm&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

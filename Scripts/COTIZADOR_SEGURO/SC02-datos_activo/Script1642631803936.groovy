@@ -54,10 +54,10 @@ if (accesorio.equals('ok')) {
 	
 	WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ACCESORIO')
 	
-	if(formaPagoAccesorio.equals('financiado')) {
-		WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
+	if(formaPagoAccesorio.equals('Financiado')) {
+		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
 	}else {
-		WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
+		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
 	}
 	
 	WebUI.delay(2)
@@ -80,10 +80,10 @@ if (adaptacion.equals('ok')) {
 	
 	WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ADAPTACIÓN')
 	
-	if(formaPagoAdaptacion.equals('financiado')) {
-		WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
+	if(formaPagoAdaptacion.equals('Financiado')) {
+		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
 	}else {
-		WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
+		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
 	}	
 	
 	WebUI.delay(2)

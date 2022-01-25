@@ -34,14 +34,14 @@
       <name>adaptacion</name>
    </variable>
    <variable>
-      <defaultValue>'contado'</defaultValue>
+      <defaultValue>'Contado'</defaultValue>
       <description></description>
       <id>f12a07c9-d044-4634-9eb1-4b4a0651d5d3</id>
       <masked>false</masked>
       <name>formaPagoAccesorio</name>
    </variable>
    <variable>
-      <defaultValue>'financiado'</defaultValue>
+      <defaultValue>'Financiado'</defaultValue>
       <description></description>
       <id>1d36e61f-4fd9-4755-9c3f-8b13d47b685a</id>
       <masked>false</masked>

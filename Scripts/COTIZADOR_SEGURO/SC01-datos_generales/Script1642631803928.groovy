@@ -33,16 +33,16 @@ if (clienteRegistrado.equals('ok')) {
 	WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosGenerales/button_buscarCliente'), GlobalVariable.REGULAR_TIME_OUT)
 }
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_plan'), plan, false)
+CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_plan'), plan.trim(), false)
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_tipoOperacion'), tipoOperacion, false)
+CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_tipoOperacion'), tipoOperacion.trim(), false)
 
-if(tipoOperacion.equals('Colocado') || tipoOperacion.equals('Crédito Puente')) {
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_tipoCompra'), tipoCompra, false)
+if(tipoOperacion.contains('Colocado') || tipoOperacion.contains('Crédito Puente')) {
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_tipoCompra'), tipoCompra.trim(), false)
 
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_cotizacion'), cotizacion, false)
+	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_cotizacion'), cotizacion.trim(), false)
 	
-	if (cotizacion.equals('Flotilla')) {
+	if (cotizacion.contains('Flotilla')) {
 		WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosGenerales/input_noActivos'), '5')
 	}
 	
@@ -50,7 +50,7 @@ if(tipoOperacion.equals('Colocado') || tipoOperacion.equals('Crédito Puente')) 
 	WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosGenerales/input_contratoAnterior'), 'TEST')
 }
 
-CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_moneda'), moneda, false)
+CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_moneda'), moneda.trim(), false)
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/Globales/button_siguiente'))
 

@@ -10,8 +10,20 @@
          <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtOperationTypeContainer > div.choices.OSFillParent.undefined > div.choices__inner > div.choices__list.choices__list--single > div.choices__item.needsclick.choices__item--selectable</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '
+              Colocado
+                Remove item
+              
+            ' or . = '
+              Colocado
+                Remove item
+              
+            ')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtOperationTypeContainer']/div/div/div/div</value>
+         <value>(//div[contains(@id,'wtOperationTypeContainer')]/div/div/div/div)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

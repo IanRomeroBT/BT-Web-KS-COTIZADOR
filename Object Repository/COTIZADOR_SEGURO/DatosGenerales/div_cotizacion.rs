@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtQuoteTypeContainer']/div/div/div/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Cotización:'])[1]/following::div[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
