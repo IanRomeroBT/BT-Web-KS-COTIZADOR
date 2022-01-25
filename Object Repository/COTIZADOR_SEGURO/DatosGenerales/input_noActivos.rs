@@ -6,19 +6,19 @@
    <elementGuidId>7a888aaa-45ad-48be-be19-e7af6d55fd6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//input[contains(@name, '$wtTxtNumberOfAssets') and @type = 'number']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtTxtNumberOfAssets</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//input[contains(@name, '$wtTxtNumberOfAssets') and @type = 'number']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[contains(@id, 'wtNumberOfAssetsContainer') and not(contains(@style, 'display:none'))]//input[contains(@name, '$wtTxtNumberOfAssets') and @type = 'number']</value>
+         <value>//div[10]/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +57,7 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtTxtNumberOfAssets</value>

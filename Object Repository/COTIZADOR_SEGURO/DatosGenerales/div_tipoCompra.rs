@@ -6,6 +6,10 @@
    <elementGuidId>af3f21d2-6428-423f-9af1-ef373c657b32</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtPurchaseTypeContainer > div.choices.OSFillParent.undefined > div.choices__inner > div.choices__list.choices__list--single > div.choices__item.needsclick.choices__item--selectable</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//div[@class = 'choices__item needsclick choices__item--selectable' and (text() = '
               Pago a Proveedor
@@ -18,12 +22,8 @@
             ')]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteGeneralData_WebPatterns_wt18_block_wtContent_wtPurchaseTypeContainer > div.choices.OSFillParent.undefined > div.choices__inner > div.choices__list.choices__list--single > div.choices__item.needsclick.choices__item--selectable</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//label[text() = 'Tipo de compra:']/parent::div/div[@role='combobox']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Otro'])[1]/following::div[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

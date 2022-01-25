@@ -6,17 +6,21 @@
    <elementGuidId>ac5be045-7a1d-46c9-90b8-cf19c9eb278b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//a[@id='RichWidgets_wt37_block_wtMainContent_wtTableRecords1_ctl03_wt40']/span[2])[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[(text() = 'Seleccionar' or . = 'Seleccionar') and @ref_element = 'Object Repository/COTIZADOR_SEGURO/DatosGenerales/iframe']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Click here to see your activities'])[1]/preceding::span[2]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

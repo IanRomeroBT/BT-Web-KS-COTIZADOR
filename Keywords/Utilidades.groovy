@@ -24,10 +24,12 @@ public class Utilidades {
 	@Keyword
 	def CustomSelect(TestObject select, String optionLabel, boolean selectInIframe) {
 
-		WebUI.delay(2)
+		WebUI.delay(1)
 
 		WebUI.click(select)
 
+		WebUI.delay(2)
+		
 		if(selectInIframe) {
 			WebUI.scrollToElement(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]),0)
 			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]))
