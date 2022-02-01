@@ -21,7 +21,7 @@
          <id>0773531a-8908-4351-b52a-d061169d68c7</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>6-6</value>
+            <value>14-46</value>
          </iterationEntity>
          <testDataId>Data Files/CLIENTES_PENDIENTES</testDataId>
       </testDataLink>
@@ -144,6 +144,18 @@
          <type>DATA_COLUMN</type>
          <value>seguroCliente</value>
          <variableId>3d03d5f6-1ff5-4fc3-9489-157f20b18348</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0773531a-8908-4351-b52a-d061169d68c7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tipoActivo</value>
+         <variableId>03e378e8-1611-4e7c-b4c6-6ca5ea6b65ad</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0773531a-8908-4351-b52a-d061169d68c7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>producto</value>
+         <variableId>9983d7a7-45f4-4406-8505-492f784ad027</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

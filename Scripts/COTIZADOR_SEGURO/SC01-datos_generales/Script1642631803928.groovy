@@ -35,6 +35,8 @@ if (clienteRegistrado.equals('ok')) {
 
 CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_plan'), plan.trim(), false)
 
+CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_producto'), producto.trim(), false)
+
 CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosGenerales/div_tipoOperacion'), tipoOperacion.trim(), false)
 
 if(tipoOperacion.contains('Colocado') || tipoOperacion.contains('Crédito Puente')) {

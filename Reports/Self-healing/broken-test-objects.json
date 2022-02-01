@@ -1,3 +1,24 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/COTIZADOR_SEGURO/CotizacionSeguro/input_companiaSeguro",
+      "brokenLocator": "//input[@id\u003d\u0027Quantico_StylingV2_wt12_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Cotizador_Widget_wtInsuranceQuoteWB_block_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt115_block_wtContent_wtAviationInsuranceForm_OutSystemsUIWeb_wt101_block_wtColumn2_wt103\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[3]/div[2]/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/COTIZADOR_SEGURO/CotizacionSeguro/input_companiaSeguro_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/COTIZADOR_SEGURO/DatosGenerales/span_seleccionarCliente",
+      "brokenLocator": "//span[(text() \u003d \u0027Seleccionar\u0027 or . \u003d \u0027Seleccionar\u0027) and @ref_element \u003d \u0027Object Repository/COTIZADOR_SEGURO/DatosGenerales/iframe\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Click here to see your activities\u0027])[1]/preceding::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/COTIZADOR_SEGURO/DatosGenerales/span_seleccionarCliente_XPATH.png"
+    }
+  ]
 }

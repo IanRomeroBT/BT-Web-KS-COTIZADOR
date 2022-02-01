@@ -21,77 +21,117 @@ WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_buscarActivo'))
 
 WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_nombreActivo'), GlobalVariable.REGULAR_TIME_OUT)
 
-WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_nombreActivo'), 'CHRYSLER')
 
-WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_filtrarActivo'))
+switch (tipoActivo) {
+    case 'AUTOMÓVILES':
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_nombreActivo'), 'CHRYSLER')
 
-WebUI.delay(5)
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_filtrarActivo'))
 
-WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/a_autoChrysler'))
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/a_autoChrysler'))
 
-WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_equipo'), GlobalVariable.REGULAR_TIME_OUT)
+        WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_equipo'), GlobalVariable.REGULAR_TIME_OUT)
 
-WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_descripcion'), 'AUTOMÓVIL ')
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_descripcion'), 'AUTOMÓVIL ')
 
-WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_comentarios'), 'TEST')
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_comentarios'), 'TEST')
 
-if(nuevo != "ok") {
-	WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/switch_nuevo'))
+        if (nuevo != 'ok') {
+            WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/switch_nuevo'))
+        }
+        
+        break
+    case 'AERONAVES':
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_nombreActivo'), 'HELICÓPTERO')
+
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_filtrarActivo'))
+
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/a_aeronave'))
+
+        WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_equipo'), GlobalVariable.REGULAR_TIME_OUT)
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_descripcion'), 'HELICOPTERO ')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_comentarios'), 'TEST')
+
+        if (nuevo != 'ok') {
+            WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/switch_nuevo'))
+        }
+        
+        break
+    case 'EMBARCACIONES':
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_nombreActivo'), 'BARCO DE OIL')
+
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_filtrarActivo'))
+
+        WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/a_barco'))
+
+        WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_equipo'), GlobalVariable.REGULAR_TIME_OUT)
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_descripcion'), 'BARCO ')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_comentarios'), 'TEST')
+
+        if (nuevo != 'ok') {
+            WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/switch_nuevo'))
+        }
+        
+        break
 }
 
-WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importe'), Keys.chord(Keys.CONTROL + 'A') + importeAuto + Keys.chord(Keys.TAB))
-
+WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importe'), (Keys.chord(Keys.CONTROL + 'A') + importeAuto) + 
+    Keys.chord(Keys.TAB))
 
 if (accesorio.equals('ok')) {
-	
-	WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_nuevoAccesorio'))
-	
-	WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
-	
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_tipo'), 'Accesorio', true)
-	
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_descripcion'), 'ADAPTADOR', true)
-	
-	WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ACCESORIO')
-	
-	if(formaPagoAccesorio.equals('Financiado')) {
-		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
-	}else {
-		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
-	}
-	
-	WebUI.delay(2)
-	
-	WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') +
-		Keys.chord(Keys.TAB))
-	
-	WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_aceptar'))
+    WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_nuevoAccesorio'))
+
+    WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
+
+    CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_tipo'), 'Accesorio', true)
+
+    CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_descripcion'), 'ADAPTADOR', 
+        true)
+
+    WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ACCESORIO')
+
+    if (formaPagoAccesorio.equals('Financiado')) {
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
+    } else {
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
+    }
+    
+    WebUI.delay(2)
+
+    WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') + 
+        Keys.chord(Keys.TAB))
+
+    WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_aceptar'))
 }
 
 if (adaptacion.equals('ok')) {
-	
-	WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_nuevoAccesorio'))
-	
-	WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
-	
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_tipo'), 'Adaptación', true)
-	
-	CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_descripcion'), 'DE REFRIGERACION', true)
-	
-	WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ADAPTACIÓN')
-	
-	if(formaPagoAdaptacion.equals('Financiado')) {
-		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
-	}else {
-		WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
-	}	
-	
-	WebUI.delay(2)
-	
-	WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') +
-		Keys.chord(Keys.TAB))
-	
-	WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_aceptar'))
+    WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_nuevoAccesorio'))
+
+    WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), GlobalVariable.REGULAR_TIME_OUT)
+
+    CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_tipo'), 'Adaptación', true)
+
+    CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosActivo/div_descripcion'), 'DE REFRIGERACION', 
+        true)
+
+    WebUI.setText(findTestObject('COTIZADOR_SEGURO/DatosActivo/textarea_comentarios'), 'TEST ADAPTACIÓN')
+
+    if (formaPagoAdaptacion.equals('Financiado')) {
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_financiado'))
+    } else {
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/DatosActivo/radio_contado'))
+    }
+    
+    WebUI.delay(2)
+
+    WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosActivo/input_importeSIva'), (Keys.chord(Keys.CONTROL + 'A') + '16.00') + 
+        Keys.chord(Keys.TAB))
+
+    WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosActivo/button_aceptar'))
 }
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/Globales/button_siguiente'))

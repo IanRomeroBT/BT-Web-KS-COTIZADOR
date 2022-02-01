@@ -30,7 +30,8 @@ if (plazos.toString().contains('-')) {
 
 def routeFile = RunConfiguration.getProjectDir() + '/Data Files/'
 
-def flag = false
+def noAplicaSeguro = false
+
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosSeguro/div_seguro'))
 
@@ -40,37 +41,144 @@ WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/div_cotizacionSeguro'))
 
-WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_ninguna'), GlobalVariable.REGULAR_TIME_OUT)
+WebUI.executeJavaScript('return document.getElementsByClassName(\'header\')[0].remove();', null)
 
-WebUI.executeJavaScript('document.body.style.zoom=\'70%\'', null)
+switch (tipoActivo) {
+    case 'AUTOMÓVILES':
+        WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/radio_ninguna'), GlobalVariable.REGULAR_TIME_OUT)
 
-WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_ninguna'))
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/radio_ninguna'))
 
-WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
+        WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
 
-WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_tipoCarga'), 'Personas')
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/input_tipoCarga'), 'Personas')
 
-WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_numeroSemiRemolque'), 'N/A', false)
+        WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_numeroSemiRemolque'), 
+            'N/A', false)
 
-WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/textarea_observaciones'), observaciones)
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/textarea_observaciones'), observaciones)
 
-WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_procedenciaVehiculo'), 'Nacional', false)
+        WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_procedenciaVehiculo'), 
+            'Nacional', false)
 
-if (nuevo.equals('ok')) {
-    WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_estadoCondiciones'), 'Nuevo', false)
-} else {
-    WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_estadoCondiciones'), 'Seminuevo', 
-        false)
+        if (nuevo.equals('ok')) {
+            WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_estadoCondiciones'), 
+                'Nuevo', false)
+        } else {
+            WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_estadoCondiciones'), 
+                'Seminuevo', false)
+        }
+        
+        WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/input_numeroPasajeros'), '6')
+
+        WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_usoVehiculo'), 'Particular', 
+            false)
+
+        WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Automovil/select_servicioVehiculo'), 
+            'Privado / Particular', false)
+
+        break
+    case 'AERONAVES':
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_cotizacion'))
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_mxn'))
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/radio_helicoptero'))
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_companiaSeguro'), 'QUALITAS')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_marca'), 'EUROCOPTER')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_modelo'), 'EC665 TIGER')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_anio'), '2003')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_serie'), 'EUTG-8732-DTSCH')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_matricula'), '9826TIGER')
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/radio_motor'))
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/radio_particular'))
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_noPasajeros'), '6')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_trips'), '1500')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_aeropuertoBase'), 'MIGUEL HIDALGO')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_tipoAeropuerto'), 'COMERCIAL')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_limitesGeograficos'), '-245454, 567888')
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/radio_comercial'))
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_horasTotales'), '1470')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/input_marcaModelo'), '1470')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Aeronave/textarea_horasExperiencia'), '1470')
+
+        break
+    case 'EMBARCACIONES':
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_cotizacion'))
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/radio_mxn'))
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_companiaSeguro'), 'QUALITAS')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_direccion'), 'VILLA SEATLE 14')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_colonia'), 'SEATLE')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_ciudad'), 'PTO. VALLARTA')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_estado'), 'JALISCO')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_cp'), '45638')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_nombreEmbarcacion'), 'BLACK SHARK')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_materialCasco'), 'ALUMINIO GRADO MILITAR')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_lugar'), 'CENTRAL')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_anioReconstruccion'), '2012')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_serie'), '21443')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_matricula'), '44')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_bandera'), '10')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_puertaRegistro'), 'ALEMANIA')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_clasificacion'), 'MILITAR')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_eslora'), '80 MTS')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_manga'), '10 MTS')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_puntual'), '5 MTS')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_tonelajeBruto'), '5000')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_tonelajeNeto'), '7000')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_aguasNavegacion'), 'PACIFICO')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/input_deducibles'), '800000')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/textarea_siniestros'), 'RECONSTRUCCION POPA')
+
+        WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/textarea_observaciones'), 'NAVIO ESPECIAL')
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/radio_velero'))
+
+        WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/Embarcacion/radio_particular'))
+
+        break
 }
-
-WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_numeroPasajeros'), '6')
-
-WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_usoVehiculo'), 'Particular', false)
-
-WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_servicioVehiculo'), 'Privado / Particular', 
-    false)
-
-WebUI.executeJavaScript('document.body.style.zoom=\'100%\'', null)
 
 WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/div_documentos'))
 
@@ -131,14 +239,13 @@ if (seguroCliente.equals('ok')) {
 WebUI.click(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/div_prima'))
 
 if (WebUI.verifyElementVisible(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/tab_prima'), FailureHandling.OPTIONAL)) {
-	
-	 WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_sumaAsegurada'), '500000')
+    WebUI.setText(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/input_sumaAsegurada'), '500000')
 
     WebUI.selectOptionByLabel(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/select_aseguradora'), 'SEGUROS ATLAS, S. A.', 
         false)
 
-	flag = true
-	
+    noAplicaSeguro = true
+
     WebUI.click(findTestObject('COTIZADOR_SEGURO/CotizacionSeguro/tab_prima'))
 
     for (def uniquePlazo : lPlazo) {
@@ -208,10 +315,12 @@ if (WebUI.verifyElementPresent(findTestObject('COTIZADOR_SEGURO/DatosGenerales/i
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosSeguro/div_seguro'))
 
-if(flag) {
-	WebUI.waitForElementPresent(findTestObject('COTIZADOR_SEGURO/DatosSeguro/button_cotizacionAceptada'), 10)
+if (noAplicaSeguro) {
+    WebUI.waitForElementPresent(findTestObject('COTIZADOR_SEGURO/DatosSeguro/button_cotizacionAceptada'), 10)
+} else if(WebUI.verifyElementNotVisible(findTestObject('COTIZADOR_SEGURO/DatosSeguro/button_cancelarCotizacion'), FailureHandling.OPTIONAL)){
+	noAplicaSeguro = true
 }else {
-	WebUI.verifyTextPresent('Solicitud enviada a Bróker', false)
+    WebUI.verifyTextPresent('Solicitud enviada a Bróker', false)
 }
 
 def noFolio = WebUI.getText(findTestObject('COTIZADOR_SEGURO/DatosSeguro/label_folio'))
@@ -234,8 +343,8 @@ CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', new
 
 CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', newRow, 3, plan)
 
-if(flag) {
-	CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', newRow, 4, "ok")
+if (noAplicaSeguro) {
+    CustomKeywords.'Utilidades.EscribirExcel'(GlobalVariable.DATA_SET, 'Folios', newRow, 4, 'ok')
 }
 
 WebUI.closeBrowser()

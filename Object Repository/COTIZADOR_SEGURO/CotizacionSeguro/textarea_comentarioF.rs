@@ -10,8 +10,12 @@
          <value>#Quantico_StylingV2_wt12_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Cotizador_Widget_wtInsuranceQuoteWB_block_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt4_block_wtContent_wtInsuranceCommentsForm_wtInsuranceCommentsTable_rows_ctl00_wtInsuranceComments_Comment</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'Quantico_StylingV2_wt12$block$OutSystemsUIWeb_wt13$block$wtContent$wtMainContent$Cotizador_Widget_wtInsuranceQuoteWB$block$OutSystemsUIWeb_wt38$block$wtTabs_Content$OutSystemsUIWeb_wt4$block$wtContent$wtInsuranceCommentsForm$wtInsuranceCommentsTable_rows$ctl00$wtInsuranceComments_Comment' and @id = 'Quantico_StylingV2_wt12_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Cotizador_Widget_wtInsuranceQuoteWB_block_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt4_block_wtContent_wtInsuranceCommentsForm_wtInsuranceCommentsTable_rows_ctl00_wtInsuranceComments_Comment']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//textarea[@id='Quantico_StylingV2_wt12_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Cotizador_Widget_wtInsuranceQuoteWB_block_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt4_block_wtContent_wtInsuranceCommentsForm_wtInsuranceCommentsTable_rows_ctl00_wtInsuranceComments_Comment']</value>
+         <value>//textarea[contains(@id,'wtInsuranceComments_Comment')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

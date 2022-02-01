@@ -6,7 +6,7 @@
    <UUID>ac7f5a78-d97c-4a4f-895e-8665f17f93e7</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Ian.Romero\git\WEB-COTIZADOR_QUANTICO\WEB-COTIZADOR_QUANTICO.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Pruebas\Documents\GitHub\BT-Web-KS-COTIZADOR\WEB-COTIZADOR_QUANTICO.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -25,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>GENERIC</type>
 </Project>

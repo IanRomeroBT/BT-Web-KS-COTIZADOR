@@ -24,12 +24,12 @@ WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/iniciar_sesion_unifin'), [('us
 WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/acceder_cotizador'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/SC01-datos_generales'), [('clienteRegistrado') : clienteRegistrado,
-	('cliente') : cliente, ('plan') : plan, ('tipoOperacion') : tipoOperacion,
+	('cliente') : cliente, ('plan') : plan, ('producto') : producto, ('tipoOperacion') : tipoOperacion,
 	('tipoCompra') : tipoCompra, ('cotizacion') : cotizacion, ('moneda') : moneda], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/SC02-datos_activo'), [('importeAuto') : importeAuto, ('nuevo') : nuevo,
 	('accesorio') : accesorio, ('adaptacion') : adaptacion, ('formaPagoAccesorio') : formaPagoAccesorio,
-	('formaPagoAdaptacion') : formaPagoAdaptacion], FailureHandling.STOP_ON_FAILURE)
+	('formaPagoAdaptacion') : formaPagoAdaptacion, ('tipoActivo') : tipoActivo], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/SC03-datos_condiciones'), [('plazos') : plazos,
 	('noRentasAnticipadas') : noRentasAnticipadas, ('noRentasDeposito') : noRentasDeposito,
@@ -39,4 +39,4 @@ WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/SC04-datos_seguro'), [('tipoPa
 FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('COTIZADOR_SEGURO/SC05-cotizar_seguro'), [('observaciones') : observaciones,
-	('nuevo') : nuevo, ('seguroCliente') : seguroCliente, ('plazos') : plazos, ('plan') : plan], FailureHandling.STOP_ON_FAILURE)
+	('nuevo') : nuevo, ('seguroCliente') : seguroCliente, ('plazos') : plazos, ('plan') : plan, ('tipoActivo') : tipoActivo], FailureHandling.STOP_ON_FAILURE)

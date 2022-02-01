@@ -54,4 +54,11 @@
       <masked>false</masked>
       <name>moneda</name>
    </variable>
+   <variable>
+      <defaultValue>'ESTRUCTURADO'</defaultValue>
+      <description></description>
+      <id>61548aba-d56d-440d-87f6-2d10370b82fd</id>
+      <masked>false</masked>
+      <name>producto</name>
+   </variable>
 </TestCaseEntity>

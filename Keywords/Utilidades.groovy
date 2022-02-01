@@ -28,8 +28,6 @@ public class Utilidades {
 
 		WebUI.click(select)
 
-		WebUI.delay(2)
-		
 		if(selectInIframe) {
 			WebUI.scrollToElement(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]),0)
 			WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/option_selectFrameDYN', [('optionLabel') : optionLabel]))
@@ -108,22 +106,23 @@ public class Utilidades {
 
 		datos.put("clienteRegistrado", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 0))
 		datos.put("plan", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 1))
-		datos.put("tipoOperacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 2))
-		datos.put("tipoCompra", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 3))
-		datos.put("cotizacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 4))
-		datos.put("moneda", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 5))
-		datos.put("importeAuto", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 6))
-		datos.put("nuevo", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 7))
-		datos.put("accesorio", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 8))
-		datos.put("formaPagoAccesorio", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 9))
-		datos.put("adaptacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 10))
-		datos.put("formaPagoAdaptacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 11))
-		datos.put("plazos", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 12))
-		datos.put("noRentasAnticipadas", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 13))
-		datos.put("noRentasDeposito", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 14))
-		datos.put("tipoPago", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 15))
-		datos.put("seguroCliente", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 16))
-		datos.put("observaciones", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 17))
+		datos.put("producto", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 2))
+		datos.put("tipoOperacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 3))
+		datos.put("tipoCompra", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 4))
+		datos.put("cotizacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 5))
+		datos.put("moneda", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 6))
+		datos.put("importeAuto", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 7))
+		datos.put("nuevo", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 8))
+		datos.put("accesorio", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 9))
+		datos.put("formaPagoAccesorio", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 10))
+		datos.put("adaptacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 11))
+		datos.put("formaPagoAdaptacion", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 12))
+		datos.put("plazos", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 13))
+		datos.put("noRentasAnticipadas", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 14))
+		datos.put("noRentasDeposito", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 15))
+		datos.put("tipoPago", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 16))
+		datos.put("seguroCliente", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 17))
+		datos.put("observaciones", ObtenerValorExcel(GlobalVariable.DATA_SET, nombreEscenario, 1, 18))
 
 		return datos
 	}

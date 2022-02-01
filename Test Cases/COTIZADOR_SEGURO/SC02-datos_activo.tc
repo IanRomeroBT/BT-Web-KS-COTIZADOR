@@ -47,4 +47,11 @@
       <masked>false</masked>
       <name>formaPagoAdaptacion</name>
    </variable>
+   <variable>
+      <defaultValue>'AUTOMÓVILES'</defaultValue>
+      <description></description>
+      <id>5f487fc4-107a-452e-b69b-7d43d09beace</id>
+      <masked>false</masked>
+      <name>tipoActiov</name>
+   </variable>
 </TestCaseEntity>

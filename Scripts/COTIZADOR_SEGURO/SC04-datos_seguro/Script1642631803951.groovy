@@ -27,6 +27,7 @@ CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosS
 
 def seguro = WebUI.getAttribute(findTestObject('COTIZADOR_SEGURO/DatosSeguro/div_aseguradora'), 'class', FailureHandling.OPTIONAL)
 
+
 if (seguro.contains('choices-disabled') == false) {
     CustomKeywords.'Utilidades.CustomSelect'(findTestObject('COTIZADOR_SEGURO/DatosSeguro/div_aseguradora'), 'INBURSA', false)
 
@@ -37,7 +38,7 @@ if (seguro.contains('choices-disabled') == false) {
     WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosSeguro/input_iva'), '16' + Keys.chord(Keys.TAB))
 }
 
-WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/button_guardar'))
+//WebUI.enhancedClick(findTestObject('COTIZADOR_SEGURO/Globales/button_guardar'))
 
 WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/Globales/button_cotizar'), GlobalVariable.SHORT_TIME_OUT)
 
@@ -50,4 +51,4 @@ if(WebUI.verifyElementPresent(findTestObject('COTIZADOR_SEGURO/DatosGenerales/in
 
 WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosSeguro/div_seguro'))
 
-WebUI.waitForElementClickable(findTestObject('COTIZADOR_SEGURO/DatosSeguro/button_cotizarSeguro'), GlobalVariable.REGULAR_TIME_OUT)
+WebUI.waitForElementVisible(findTestObject('COTIZADOR_SEGURO/DatosSeguro/button_cotizarSeguro'), GlobalVariable.REGULAR_TIME_OUT)

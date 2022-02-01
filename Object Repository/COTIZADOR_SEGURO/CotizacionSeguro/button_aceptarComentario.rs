@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='Quantico_StylingV2_wt12_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Cotizador_Widget_wtInsuranceQuoteWB_block_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt4_block_wtContent_wtInsuranceCommentsForm_wtInsuranceCommentsTable']/tbody/tr[2]/td/div/a/i</value>
+         <value>//i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -145,4 +145,18 @@
       <masked>false</masked>
       <name>seguroCliente</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>03e378e8-1611-4e7c-b4c6-6ca5ea6b65ad</id>
+      <masked>false</masked>
+      <name>tipoActivo</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9983d7a7-45f4-4406-8505-492f784ad027</id>
+      <masked>false</masked>
+      <name>producto</name>
+   </variable>
 </TestCaseEntity>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(@id,&quot;ctl08_wt35_wtTxtFinanCondTerm&quot;)]</value>
+         <value>(//*[contains(@id,&quot;wtTxtFinanCondTerm&quot;) and not(contains(@style, 'display: none'))])[last()]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
