@@ -19,4 +19,18 @@
       <masked>false</masked>
       <name>cotizacionAceptada</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>739454c7-7d42-44ed-a6a2-3912637f8a24</id>
+      <masked>false</masked>
+      <name>tareaAsignada</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>26ec9793-d369-40cc-9184-90aec69f976d</id>
+      <masked>false</masked>
+      <name>perfilGenerico</name>
+   </variable>
 </TestCaseEntity>

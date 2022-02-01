@@ -17,19 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-if(cotizacionAceptada != 'ok') {
-	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/inicio_sesion_quantico'), [('usuario') : 'lucero.vargas_tst', ('password') : 'RigbBhfdqOBGNlJIWM1ClA=='],
-		FailureHandling.STOP_ON_FAILURE)
+if (cotizacionAceptada != 'ok') {
+    WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/inicio_sesion_quantico'), [('usuario') : 'acorrea_tst', ('password') : 'RigbBhfdqOBGNlJIWM1ClA=='], 
+        FailureHandling.STOP_ON_FAILURE)
+
+   WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/acceder_solicitud'), [('folio') : folio, ('tareaAsignada') : tareaAsignada
+		,('perfilGenerico') : perfilGenerico ], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC06_informacion_adicional'), [('plazos') : plazos, ('cotizacionAceptada') : cotizacionAceptada], 
+        FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC07_aceptar_prima'), [('usuario') : 'fernanda.rojas', ('folio') : folio
+            , ('cotizacionAceptada') : cotizacionAceptada], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC08_generar_negociacion'), [('cliente') : cliente, ('folio') : folio], 
+        FailureHandling.STOP_ON_FAILURE)
 	
-	
-	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/acceder_solicitud'), [('folio') : folio], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC06_informacion_adicional'), [('plazos') : plazos, ('cotizacionAceptada') : cotizacionAceptada],
-		 FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC07_aceptar_prima'), [('usuario') : 'fernanda.rojas', ('folio') : folio,
-		('cotizacionAceptada') : cotizacionAceptada], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC08_generar_negociacion'), [('cliente') : cliente, ('folio') : folio], FailureHandling.STOP_ON_FAILURE)
-	
+	WebUI.callTestCase(findTestCase('NEGOCIADOR_SEGURO/SC09-solicitar_autorizacion(Pend)'), [:], FailureHandling.STOP_ON_FAILURE)
 }
+
+
+

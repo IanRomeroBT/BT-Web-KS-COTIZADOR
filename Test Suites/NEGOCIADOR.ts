@@ -21,7 +21,7 @@
          <id>47cfd29f-41d0-490b-b31b-d9411ea255a7</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>30</value>
+            <value>31</value>
          </iterationEntity>
          <testDataId>Data Files/FOLIOS</testDataId>
       </testDataLink>
@@ -54,6 +54,18 @@
          <type>DATA_COLUMN</type>
          <value>cotizacionAceptada</value>
          <variableId>ed7f4ea7-6779-4c85-b19f-eb0b959b1ce1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>47cfd29f-41d0-490b-b31b-d9411ea255a7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tareaAsignada</value>
+         <variableId>35633eb9-6683-4279-87e9-3266bdbfab7d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>47cfd29f-41d0-490b-b31b-d9411ea255a7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>perfilGenerico</value>
+         <variableId>c629fd06-6ca0-4092-920f-f08c76476880</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

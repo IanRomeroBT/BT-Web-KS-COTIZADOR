@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>entrega_punto</name>
+   <tag></tag>
+   <elementGuidId>883b7435-8d75-4b07-9b0a-db43d1869dab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@class='select OSFillParent Mandatory']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Quantico_StylingV2_wtMainSection$block$OutSystemsUIWeb_wt13$block$wtContent$wtMainContent$Disposition_Widgets_wtNegotiatorSummaryTabsWidget$block$wtSectionActivo$wt48$OutSystemsUIWeb_wt38$block$wtTabs_Content$OutSystemsUIWeb_wt5$block$wtContent$Cotizador_Widget_V2_wtNegotiatorAsset_Wb$block$OutSystemsUIWeb_wt12$block$wtContent$wt8$wtLR_DeliveryPoints$ctl00$wt42</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>657</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select OSFillParent Mandatory</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeydown</name>
+      <type>Main</type>
+      <value>return OsEnterKey('Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wt63', arguments[0] || window.event);</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-required</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-invalid</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>OsAjax(arguments[0] || window.event,'Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42','Quantico_StylingV2_wtMainSection$block$OutSystemsUIWeb_wt13$block$wtContent$wtMainContent$Disposition_Widgets_wtNegotiatorSummaryTabsWidget$block$wtSectionActivo$wt48$OutSystemsUIWeb_wt38$block$wtTabs_Content$OutSystemsUIWeb_wt5$block$wtContent$Cotizador_Widget_V2_wtNegotiatorAsset_Wb$block$OutSystemsUIWeb_wt12$block$wtContent$wt8$wtLR_DeliveryPoints$ctl00$wt42','Change','__OSVSTATE,','');</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeyup</name>
+      <type>Main</type>
+      <value>this.onchange();</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+	Elija una opción
+	Cliente
+	Agencia
+	Fabrica
+	Otro
+
+</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42&quot;)</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints']/span/div/div[2]/select</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acciones'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Responsable recepción'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SaveAssetDeliveryPoints'])[1]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ValidationAssetDeliveryPoints'])[1]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/select</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'Quantico_StylingV2_wtMainSection$block$OutSystemsUIWeb_wt13$block$wtContent$wtMainContent$Disposition_Widgets_wtNegotiatorSummaryTabsWidget$block$wtSectionActivo$wt48$OutSystemsUIWeb_wt38$block$wtTabs_Content$OutSystemsUIWeb_wt5$block$wtContent$Cotizador_Widget_V2_wtNegotiatorAsset_Wb$block$OutSystemsUIWeb_wt12$block$wtContent$wt8$wtLR_DeliveryPoints$ctl00$wt42' and @id = 'Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt12_block_wtContent_wt8_wtLR_DeliveryPoints_ctl00_wt42' and (text() = '
+	Elija una opción
+	Cliente
+	Agencia
+	Fabrica
+	Otro
+
+' or . = '
+	Elija una opción
+	Cliente
+	Agencia
+	Fabrica
+	Otro
+
+')]</value>
+   </webElementXpaths>
+</WebElementEntity>
