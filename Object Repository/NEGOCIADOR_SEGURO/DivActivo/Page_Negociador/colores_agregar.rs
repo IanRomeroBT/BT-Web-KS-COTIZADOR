@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>colores_agregar</name>
+   <tag></tag>
+   <elementGuidId>afaf8677-afcd-4613-acbe-0124a8e9ffdd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt116_block_wtContent_wt84_wt29 > span.fa.fa-fw.fa-plus</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt114_block_wtContent_wt84_wt29']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-fw fa-plus</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt116_block_wtContent_wt84_wt29&quot;)/span[@class=&quot;fa fa-fw fa-plus&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='Quantico_StylingV2_wtMainSection_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_Disposition_Widgets_wtNegotiatorSummaryTabsWidget_block_wtSectionActivo_wt48_OutSystemsUIWeb_wt38_block_wtTabs_Content_OutSystemsUIWeb_wt5_block_wtContent_Cotizador_Widget_V2_wtNegotiatorAsset_Wb_block_OutSystemsUIWeb_wt116_block_wtContent_wt84_wt29']/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//fieldset/div/div/div/div[2]/div/a/span</value>
+   </webElementXpaths>
+</WebElementEntity>
