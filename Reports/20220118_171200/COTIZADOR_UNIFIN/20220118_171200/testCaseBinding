@@ -1,0 +1,7 @@
+{"testCaseName":"Test Cases/HOOKS/iniciar_sesion_unifin","testCaseId":"Test Cases/HOOKS/iniciar_sesion_unifin"}
+{"testCaseName":"Test Cases/HOOKS/acceder_cotizador_unifin","testCaseId":"Test Cases/HOOKS/acceder_cotizador_unifin"}
+{"testCaseName":"Test Cases/UNIFIN/SC01-datos_generales","testCaseId":"Test Cases/UNIFIN/SC01-datos_generales","bindedValues":{"cliente":"\u0027OMAR MULU AGUILERA CHALAMANCH\u0027","tipoOperacion":"\u0027Colocado\u0027","cotizacion":"\u0027Flotilla\u0027","tipoCompra":"\u0027Referenciada\u0027","clienteRegistrado":"\u0027ok\u0027","moneda":"\u0027PESOS\u0027","plan":"\u0027ARRENDAMIENTO PURO\u0027"}}
+{"testCaseName":"Test Cases/UNIFIN/SC02-datos_activo","testCaseId":"Test Cases/UNIFIN/SC02-datos_activo"}
+{"testCaseName":"Test Cases/UNIFIN/SC03-datos_condiciones","testCaseId":"Test Cases/UNIFIN/SC03-datos_condiciones"}
+{"testCaseName":"Test Cases/UNIFIN/SC04-datos_seguro","testCaseId":"Test Cases/UNIFIN/SC04-datos_seguro","bindedValues":{"importeAuto":"\u0027676000\u0027","tipoPago":"\u0027Cliente\u0027"}}
+{"testCaseName":"Test Cases/UNIFIN/SC05-cotizar_seguro","testCaseId":"Test Cases/UNIFIN/SC05-cotizar_seguro","bindedValues":{"nuevo":"\u0027ok\u0027","observaciones":"\u0027Test\u0027","seguroCliente":"\u0027ok\u0027"}}

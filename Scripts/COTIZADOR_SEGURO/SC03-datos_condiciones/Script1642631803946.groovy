@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.scrollToPosition(0, 0)
+
 String[] lPlazo
 
 String iva = ''
@@ -42,7 +44,7 @@ WebUI.scrollToPosition(0, 0)
 for (def uniquePlazo : lPlazo) {
     if ((uniquePlazo.isEmpty() == false) && uniquePlazo.equals('12')) {
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_plazoDYN', [('idx') : '1']), (Keys.chord(Keys.CONTROL + 
-                'A') + '12') + Keys.chord(Keys.ENTER))
+                'A') + '12') + Keys.chord(Keys.TAB))
 
         WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/check_plazoDYN', [('idx') : '1']))
 
@@ -68,7 +70,7 @@ for (def uniquePlazo : lPlazo) {
         WebUI.scrollToPosition(0, 0)
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_plazoDYN', [('idx') : '2']), (Keys.chord(Keys.CONTROL + 
-                'A') + '24') + Keys.chord(Keys.ENTER))
+                'A') + '24') + Keys.chord(Keys.TAB))
 
         WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/check_plazoDYN', [('idx') : '2']))
 
@@ -94,7 +96,7 @@ for (def uniquePlazo : lPlazo) {
         WebUI.scrollToPosition(0, 0)
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_plazoDYN', [('idx') : '3']), (Keys.chord(Keys.CONTROL + 
-                'A') + '32') + Keys.chord(Keys.ENTER))
+                'A') + '32') + Keys.chord(Keys.TAB))
 
         WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/check_plazoDYN', [('idx') : '3']))
 
@@ -119,7 +121,7 @@ for (def uniquePlazo : lPlazo) {
         WebUI.scrollToPosition(0, 0)
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_plazoDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + '48') + Keys.chord(Keys.ENTER))
+                'A') + '48') + Keys.chord(Keys.TAB))
 
         WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/check_plazoDYN', [('idx') : '4']))
 
@@ -127,44 +129,62 @@ for (def uniquePlazo : lPlazo) {
                 'A') + '40') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_caDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + iva) + Keys.chord(Keys.TAB))
+                'A') + '3') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_cafDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + '2') + Keys.chord(Keys.TAB))
+                'A') + '3') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_vrcDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + '25') + Keys.chord(Keys.TAB))
+                'A') + '15') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_vriDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + '25') + Keys.chord(Keys.TAB))
+                'A') + '15') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_tasaDYN', [('idx') : '4']), (Keys.chord(Keys.CONTROL + 
-                'A') + iva) + Keys.chord(Keys.TAB))
+                'A') + '3') + Keys.chord(Keys.TAB))
     } else if (uniquePlazo.isEmpty() == false) {
+		
+		def ca = "3"
+		def vrc = "20"
+		def vri = "20"
+		def tasa = "12"
+		
+		if (plan.contains('ARRENDAMIENTO AGRICOLA')) {
+			ca = "3"
+			vrc = "15"
+			vri = "16"
+			tasa = "12"
+			
+		}else if(plan.contains('ARRENDAMIENTO PURO')) {
+			tasa = "20"
+		}
+		
         WebUI.scrollToPosition(0, 0)
 
         WebUI.click(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/check_plazoDYN', [('idx') : '5']))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_plazoPersonalizado'), Keys.chord(Keys.CONTROL + 'A') + 
             uniquePlazo)
+		
+		WebUI.delay(2)
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_pagoUnicoDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + '40') + Keys.chord(Keys.TAB))
-
-        WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_caDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + '3') + Keys.chord(Keys.TAB))
+                'A') + '25') + Keys.chord(Keys.TAB))
+		
+        WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_caDYN', [('idx') : '9']), (Keys.chord(Keys.CONTROL + 
+                'A') + ca) + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_cafDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + '2') + Keys.chord(Keys.TAB))
+                'A') + '3') + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_vrcDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + '25') + Keys.chord(Keys.TAB))
+                'A') + vrc) + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_vriDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + '25') + Keys.chord(Keys.TAB))
+                'A') + vri) + Keys.chord(Keys.TAB))
 
         WebUI.sendKeys(findTestObject('COTIZADOR_SEGURO/DatosCondiciones/input_tasaDYN', [('idx') : '5']), (Keys.chord(Keys.CONTROL + 
-                'A') + iva) + Keys.chord(Keys.TAB))
+                'A') + tasa) + Keys.chord(Keys.TAB))
     }
 }
 

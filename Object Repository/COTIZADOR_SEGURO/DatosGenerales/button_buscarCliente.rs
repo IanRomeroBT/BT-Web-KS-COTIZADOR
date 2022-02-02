@@ -10,21 +10,25 @@
          <value>#Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn1_wtQuoteCustomerWebBlock_OutSystemsUIWeb_wt32_block_wtContent_wtFindClientLink</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//a[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn1_wtQuoteCustomerWebBlock_OutSystemsUIWeb_wt32_block_wtContent_wtFindClientLink']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cliente'])[1]/following::a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
@@ -38,7 +42,7 @@
       <value>67</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>

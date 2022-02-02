@@ -6,19 +6,19 @@
    <elementGuidId>2f84385a-214c-49e4-9430-4239cb843bfa</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>span.fa.fa-fw.fa-search.fa-2x</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>id(&quot;Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_wtFindAsset&quot;)/span[@class=&quot;fa fa-fw fa-search fa-2x&quot;][count(. | //span[@class = 'fa fa-fw fa-search fa-2x']) = count(//span[@class = 'fa fa-fw fa-search fa-2x'])]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteAsset_WebBlock_WebPatterns_wtfsAsset_block_wtContent_wtFindAsset']/span</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>span.fa.fa-fw.fa-search.fa-2x</value>
+         <value>//a[contains(@id, '_wtfsAsset_block_wtContent_wtFindAsset')]/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

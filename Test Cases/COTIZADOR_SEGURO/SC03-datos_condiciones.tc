@@ -27,7 +27,7 @@
       <name>noRentasDeposito</name>
    </variable>
    <variable>
-      <defaultValue>'ARRENDAMIENTO FRONTERA'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>4b6c889e-7673-49e6-8d18-eb4a16968987</id>
       <masked>false</masked>

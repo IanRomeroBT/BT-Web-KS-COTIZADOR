@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Quantico_StylingV2_wt144_block_OutSystemsUIWeb_wt14_block_wtContent_wtMainContent_OutSystemsUIWeb_wt44_block_wtColumn2_wtQuoteInitialPayment_WebBlock_WebPatterns_wt9_block_wtContent_wtRentsOnDepositNumInput&quot;]</value>
+         <value>//input[contains(@id, 'wtContent_wtRentsOnDepositNumInput')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
