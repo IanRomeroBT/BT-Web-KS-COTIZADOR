@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_nombre_frame</name>
+   <tag></tag>
+   <elementGuidId>95f4c054-1866-4ada-9f6c-703480048b0f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='RichWidgets_wt20_block_wtMainContent_OutSystemsUIWeb_wt5_block_wtColumn1_wtNameSupplierCRMInput']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

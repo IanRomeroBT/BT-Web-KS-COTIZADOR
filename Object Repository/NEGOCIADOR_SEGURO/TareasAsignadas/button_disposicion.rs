@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_disposicion</name>
+   <tag></tag>
+   <elementGuidId>e8075f91-17e2-4524-86b7-51660b6049cf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Quantico_StylingV2_wt21_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_OutSystemsUIWeb_wt17_block_wtTabs_Header_wtLS_Header_ctl02_OutSystemsUIWeb_wt20_block_wtTitle']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_guardar</name>
+   <tag></tag>
+   <elementGuidId>b42e9b4a-a7ee-449a-9ad6-8896c1c89963</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Quantico_StylingV2_wt64_block_OutSystemsUIWeb_wt29_block_wtContent_wtMainContent_wt16_wtSaveButton']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

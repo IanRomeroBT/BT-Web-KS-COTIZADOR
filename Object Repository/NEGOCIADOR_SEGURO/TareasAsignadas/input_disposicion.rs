@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_disposicion</name>
+   <tag></tag>
+   <elementGuidId>ad21b625-932b-4609-aace-cfcc0d0bcccd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Quantico_StylingV2_wt21_block_OutSystemsUIWeb_wt13_block_wtContent_wtMainContent_OutSystemsUIWeb_wt17_block_wtTabs_Content_wtLS_Content_ctl02_OutSystemsUIWeb_wt54_block_wtContent_wt35_wt2_WebPatterns_wt17_block_wtColumn1_wtContractInput2']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

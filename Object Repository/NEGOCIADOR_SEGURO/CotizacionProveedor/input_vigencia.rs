@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_vigencia</name>
+   <tag></tag>
+   <elementGuidId>b340205c-c6cd-46a4-a6a9-fe2e16733631</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Quantico_StylingV2_wt64_block_OutSystemsUIWeb_wt29_block_wtContent_wtMainContent_wt16_WebPatterns_wt29_block_wtColumn2_WebPatterns_wt30_block_wtColumn1_wtExpirationDaysInput']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

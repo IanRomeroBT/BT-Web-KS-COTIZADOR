@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_proveedor</name>
+   <tag></tag>
+   <elementGuidId>9a8faacc-6d81-4e2c-a33f-1159047a0ba8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Quantico_StylingV2_wt64_block_OutSystemsUIWeb_wt29_block_wtContent_wtMainContent_wt16_WebPatterns_wt29_block_wtColumn1_OutSystemsUIWeb_wt23_block_wtInput_wtSupplierInput']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

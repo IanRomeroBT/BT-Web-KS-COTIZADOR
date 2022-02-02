@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>//input[@id='Quantico_StylingV2_wt64_block_OutSystemsUIWeb_wt29_block_wtContent_wtMainContent_wt16_WebPatterns_wt29_block_wtColumn1_OutSystemsUIWeb_wt2_block_wtInput_wtContactInput']</description>
+   <name>input_contacto</name>
+   <tag></tag>
+   <elementGuidId>67611576-82e0-4dfb-8afe-f638f4e01b10</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Quantico_StylingV2_wt64_block_OutSystemsUIWeb_wt29_block_wtContent_wtMainContent_wt16_WebPatterns_wt29_block_wtColumn1_OutSystemsUIWeb_wt2_block_wtInput_wtContactInput']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

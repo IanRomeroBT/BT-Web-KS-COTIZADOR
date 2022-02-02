@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC010-cotizacion_proveedor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>134a3370-6026-4b25-93b1-055ff94c1785</testCaseGuid>
+   <variable>
+      <defaultValue>'ACCESORIOS PARA BAÑO'</defaultValue>
+      <description></description>
+      <id>b360a01d-5051-4e09-b7fb-3409db13038e</id>
+      <masked>false</masked>
+      <name>proveedor</name>
+   </variable>
+   <variable>
+      <defaultValue>40</defaultValue>
+      <description></description>
+      <id>6437b55c-b93b-4fcc-b4ed-b5e336287739</id>
+      <masked>false</masked>
+      <name>vigencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'27-02-2023'</defaultValue>
+      <description></description>
+      <id>17e12280-11c7-4480-8018-80bb641ec3fa</id>
+      <masked>false</masked>
+      <name>fechafin</name>
+   </variable>
+   <variable>
+      <defaultValue>'1341'</defaultValue>
+      <description></description>
+      <id>53e45d80-bbbf-49b0-a3d3-b05107fa4b53</id>
+      <masked>false</masked>
+      <name>disposicion</name>
+   </variable>
+</TestCaseEntity>
